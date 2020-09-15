@@ -1,0 +1,26 @@
+
+name: Another Sample Task
+description: Another Sample description about this task
+
+sources:
+  - name: somename2
+    type: mysql
+    params:
+      host: localhost
+      port: 3360
+      user: user
+      pass: pass
+
+hooks:
+  - name: hook1
+    type: inventoryS3
+    params:
+      language: en
+      pos: br
+
+outputs:
+  - name: output2
+    type: foo
+    params:
+      bar: baz
+      baz: true
